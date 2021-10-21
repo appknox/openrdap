@@ -1,12 +1,12 @@
-from .nameserver import Nameserver
 from .autnum import Autnum
-from .public_id import PublicId
-from .network import Network
-from .secure_dns import SecureDNS
-from .remark import Remark
 from .entity import Entity
 from .event import Event
 from .link import Link
+from .nameserver import Nameserver
+from .network import Network
+from .public_id import PublicId
+from .remark import Remark
+from .secure_dns import SecureDNS
 
 __all__ = [
     Link.__name__,

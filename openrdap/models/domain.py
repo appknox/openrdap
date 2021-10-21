@@ -1,12 +1,13 @@
 from dataclasses import dataclass
+
+from openrdap.models.entity import Entity
+from openrdap.models.event import Event
+from openrdap.models.link import Link
+from openrdap.models.nameserver import Nameserver
 from openrdap.models.network import Network
 from openrdap.models.public_id import PublicId
-from openrdap.models.secure_dns import SecureDNS
-from openrdap.models.nameserver import Nameserver
-from openrdap.models.entity import Entity
 from openrdap.models.remark import Remark
-from openrdap.models.link import Link
-from openrdap.models.event import Event
+from openrdap.models.secure_dns import SecureDNS
 
 
 @dataclass
