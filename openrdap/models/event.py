@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from datetime import datetime
 
+from openrdap.utils import get_iso_format_date
+
 
 @dataclass
 class Event:
@@ -11,11 +13,8 @@ class Event:
     @classmethod
     def parse(cls, data: dict):
         _date = data.get("eventDate", "")
-        if "+" in _date:
-            # FIXME: ISO DATE should be validated
-            _date = _date.split("+")[0]
         return cls(
             action=data.get("eventAction", ""),
             actor=data.get("eventActor", ""),
-            date=datetime.fromisoformat(_date) if _date else None,
+            date=get_iso_format_date(_date) if _date else None,
         )
