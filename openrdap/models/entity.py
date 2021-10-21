@@ -1,10 +1,13 @@
 from __future__ import annotations
-from dataclasses import dataclass, field
+
+from dataclasses import dataclass
+from dataclasses import field
+
 from openrdap.exceptions import InvalidObjectExcption
 import openrdap.models
+from openrdap.models.event import Event
 from openrdap.models.public_id import PublicId
 from openrdap.models.remark import Remark
-from openrdap.models.event import Event
 
 
 @dataclass

@@ -1,6 +1,7 @@
 from dataclasses import dataclass
-from openrdap.models.link import Link
+
 from openrdap.models.event import Event
+from openrdap.models.link import Link
 
 
 @dataclass

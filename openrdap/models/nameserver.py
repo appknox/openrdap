@@ -1,9 +1,10 @@
 from dataclasses import dataclass
-from openrdap.models.link import Link
-from openrdap.models.event import Event
-from openrdap.models.remark import Remark
-from openrdap.models.ip_addresses import IpAddresses
+
 from openrdap.models.entity import Entity
+from openrdap.models.event import Event
+from openrdap.models.ip_addresses import IpAddresses
+from openrdap.models.link import Link
+from openrdap.models.remark import Remark
 
 
 @dataclass
